@@ -4,7 +4,7 @@
 	$b = $_POST["user"];
     $c = $_POST["password"];
     
-    $sql = "INSERT INTO `record2` (`password`,`name`,`content`,`link`) VALUES ('{$c}','{$b}','{$a}','{$a}')";
+    $sql = "INSERT INTO `record` (`password`,`name`,`content`,`link`) VALUES ('{$c}','{$b}','{$a}','{$a}')";
     $result = mysqli_query($link,$sql);
     if(mysqli_affected_rows($link)>0){
         $new_id = mysqli_insert_id($link);

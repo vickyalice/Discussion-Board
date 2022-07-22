@@ -48,7 +48,7 @@
                     <?php
                         echo "<input type='hidden' value=".$name." name='name'>";
                     ?>
-                    <td colspan="2"><center><input class="btn" type="submit" value="確認回覆" onclick="sendForm()"></center></td>
+                    <td colspan="2"><center><input style='background-color:lightyellow;' class="btn" type="submit" value="確認回覆" onclick="sendForm()"></center></td>
                 </tr>
             </table>
         </form>

@@ -33,11 +33,11 @@
 
 <body>
     <?php
-    $info = "SELECT * FROM `message2` WHERE `link`='{$name}' ORDER BY ID ASC";
+    $info = "SELECT * FROM `message` WHERE `link`='{$name}' ORDER BY id ASC";
     $result = mysqli_query($link, $info);
     $fieldInfo = mysqli_fetch_field($result);
     echo "<table border = '1'>";
-    echo "<tr><td>發表人</td><td>文章標題</td></tr>";
+    echo "<tr><td><center>發表人</center></td><td><center>文章標題</center></td></tr>";
     while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         echo '<tr>';
         echo "<td>" . $row["name"] . "</td>";
@@ -51,7 +51,7 @@
             <form method="POST" action="insert.php">
                 <?php echo "<input type='hidden' value=" . $name . " name='user'>"; ?>
                 <?php echo "<input type='hidden' value=" . $title . " name='replyTitle'>"; ?>
-                <center><input class="btn" type="submit" value="點我回覆文章"></center>
+                <center><input style='background-color:lightyellow;' class="btn" type="submit" value="點我回覆文章"></center>
         </td>
         </form>
     </tr>
@@ -60,7 +60,7 @@
             <form method="POST" action="change.php">
                 <?php echo "<input type='hidden' value=" . $password . " name='replyPwd'>"; ?>
                 <?php echo "<input type='hidden' value=" . $title . " name='replyTitle'>"; ?>
-                <center><input class="btn" type="submit" value="點我編輯原文"></center>
+                <center><input style='background-color:lightyellow;' class="btn" type="submit" value="點我編輯原文"></center>
         </td>
         </form>
     </tr>

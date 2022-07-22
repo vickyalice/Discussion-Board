@@ -6,7 +6,7 @@
     $title = $_POST["replyTitle"];
     if($replyPwd==$changePwd){
         require_once "connectDB.php";
-        $info = "SELECT * FROM `message2` WHERE `password`='{$replyPwd}'";
+        $info = "SELECT * FROM `message` WHERE `password`='{$replyPwd}'";
         $result = mysqli_query($link,$info);
         $fieldInfo = mysqli_fetch_field($result);
         $rows = mysqli_num_rows($result);
@@ -17,7 +17,7 @@
             echo "<table>";
             echo "<tr><th>編輯文章:".$title."</th></tr>";
             echo "<td><textarea name='txtContent' cols='80' rows='10'>".$title."</textarea></td>";
-            echo "<tr><td><input type='submit' class='btn' name = 'changeBtn' width='100%' value='更新文章'></td></tr>";
+            echo "<tr><td><input style='background-color:lightyellow;' type='submit' class='btn' name = 'changeBtn' width='100%' value='更新文章'></td></tr>";
             echo "</table>";
             echo "</form>";
         }

@@ -5,8 +5,8 @@
     $title = $_POST["title"];
     $password = $_POST["password"];
     
-    $info = "INSERT INTO `record2` (`password`,`content`,`name`) VALUES ('{$password}','{$title}','{$user}')";
-    $info2 = "INSERT INTO `message2` (`password`,`content`,`name`,`link`) VALUES ('{$password}','{$title}','{$user}','{$title}')";    
+    $info = "INSERT INTO `record` (`password`,`content`,`name`) VALUES ('{$password}','{$title}','{$user}')";
+    $info2 = "INSERT INTO `message` (`password`,`content`,`name`,`link`) VALUES ('{$password}','{$title}','{$user}','{$user}')";    
     $result = mysqli_query($link,$info);
     $result2 = mysqli_query($link,$info2);
     if(mysqli_affected_rows($link)>0){

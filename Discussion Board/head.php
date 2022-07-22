@@ -50,9 +50,10 @@
 </head>
 
 <body>
+    <h3>文章集中區~歡迎投稿</h1>
     <?php
     require_once "connectDB.php";
-    $info = "SELECT * FROM `record2`";
+    $info = "SELECT * FROM `record`";
     $result = mysqli_query($link, $info);
     $fieldInfo = mysqli_fetch_field($result);
     ?>
@@ -68,24 +69,24 @@
             echo "<input type='hidden' value='" . $row["name"] . "' name='user'>";
             echo "<input type='hidden' value='" . $row["password"] . "' name='password'>";
             echo "<input type='hidden' value='" . $row["content"] . "' name='title'>";
-            echo "<td><center><input type='submit' id='content' class='insert' value='" . $row["content"] . "' ></center></td>";
+            echo "<td><center><input style='text-decoration: underline;' type='submit' id='content' class='insert' value='" . $row["content"] . "' ></center></td>";
             echo "<td>" . $row["name"] . "</td>";
             echo "</tr></form>";
         }
         ?>
         <tr>
-            <td colspan="2">
-                <center><input type="button" id="insertBtn" value="新增" onclick="show()"></center>
+            <td  style='background-color:lightyellow;' colspan="2">
+                <center><input style='background-color:lightyellow;' type="button" id="insertBtn" value="新增" onclick="show()"></center>
             </td>
         </tr>
     </table>
     <br>
     <div id="designDiv" style="display:none;">
         <form id="formShow" method="POST" action="insertTitle.php"><br>
-            &nbsp使用者:<input type="text" id="user" name="user"><br>
-            &nbsp密&nbsp&nbsp&nbsp&nbsp碼:<input type="text" id="password" name="password"><br>
-            &nbsp問題:<br>&nbsp<textarea id="title" cols="56" rows="10" name="title"></textarea><br>
-            <center><input type="submit" class="insert" value="確認新增"></center>
+            &nbsp使用者*:<input type="text" id="user" name="user" required="required"><br>
+            &nbsp密&nbsp&nbsp&nbsp&nbsp碼*:<input type="text" id="password" name="password" required="required"><br>
+            &nbsp問題*:<br>&nbsp<textarea id="title" cols="56" rows="10" name="title" required="required"></textarea><br>
+            <center><input style="background-color:lightyellow;border:'1px solid black'" type="submit" class="insert" value="確認新增"></center>
         </form>
     </div>
 </body>

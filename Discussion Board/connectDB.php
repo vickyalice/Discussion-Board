@@ -2,7 +2,7 @@
     $host = 'localhost';
     $dbUser = 'root';
     $dbPw = '';
-    $dbName = 'my_db';
+    $dbName = 'discussion_board';
 
     $link = mysqli_connect($host,$dbUser,$dbPw,$dbName);
 

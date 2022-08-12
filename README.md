@@ -3,11 +3,17 @@
 網頁截圖:
 
 [主頁]
-![主頁](https://user-images.githubusercontent.com/56119317/184297429-52811e85-8fa5-4a51-bb0b-5149e6bbbef8.PNG)
+
+![主頁(裁減大小)](https://user-images.githubusercontent.com/56119317/184298301-0b50ba5a-ff12-487d-a793-8cacd9626ebb.png)
+
 [主頁_新增資料後]
-![主頁_新增資料後](https://user-images.githubusercontent.com/56119317/184297496-debc9f1d-3e78-40ee-a3f5-a61b68263a4f.PNG)
+![主頁_新增資料後(裁減大小)](https://user-images.githubusercontent.com/56119317/184298647-103c14fe-a5d5-4041-ae35-df63e6683d8f.png)
+
 [回覆文章]
-![回覆文章](https://user-images.githubusercontent.com/56119317/184297535-d3dbf57d-5157-4c5f-8ae4-af5ef509a196.PNG)
-![回覆文章-2](https://user-images.githubusercontent.com/56119317/184297551-bdf2563c-56e7-4da3-be14-c87c70b22fc9.PNG)
+![回覆文章((裁減大小))](https://user-images.githubusercontent.com/56119317/184298337-bee1a462-b2e4-4447-8741-40bd7ad4207e.png)
+![回覆文章-2(裁減大小)](https://user-images.githubusercontent.com/56119317/184298339-c22d75a3-974f-41ce-a324-efebd1afa04c.png)
+
 [編輯原文]
-![編輯原文](https://user-images.githubusercontent.com/56119317/184297573-c3d5d283-f739-41a7-9ee8-8192a08a9407.PNG)
+
+![編輯原文(裁減大小)](https://user-images.githubusercontent.com/56119317/184298348-01788104-056d-4d20-9949-228aec68ab02.png)
+
